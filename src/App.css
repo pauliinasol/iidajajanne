@@ -6,17 +6,20 @@
   height: 40vmin;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .App-header {
+  background-color: #b8b5b4;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+  background-image: url("../src/puutarha-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
 
 .App-link {
-  color: #09d3ac;
+  color: #927f66;
 }
