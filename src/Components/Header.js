@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import iidankutsu from "../iidankutsu.png";
+import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
 import { HeadingTwo } from "../Utils/utils";
 import { animated, useSpring } from "react-spring";
@@ -21,37 +21,46 @@ const WeddingContainer = styled.div`
 const CallToButtonStyled = styled(animated.div)`
   background-color: #b8926a;
   padding: 15px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 10px;
   color: white;
   pointer-events: all;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
-export const CallToButton = ({ children }) => {
-  const [hovering, setHovering] = useState(false);
+export const CallToButton = () => {
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: { mass: 5, tension: 350, friction: 40 }
+  }));
 
-  const tooltipSpring = useSpring({
-    opacity: hovering ? 1 : 0,
-    transform: `translate3d(0, ${hovering ? 0 : 1}rem, 0)`,
-    pointerEvents: hovering ? "all" : "none"
-  });
+  const calc = (x, y) => [
+    -(y - window.innerHeight / 2) / 20,
+    (x - window.innerWidth / 2) / 25,
+    1.1
+  ];
+  const trans = (x, y, s) =>
+    `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
   return (
     <CallToButtonStyled
-      onMouseEnter={() => {
-        console.log("Hello world");
-      }}
-      onMouseLeave={() => setHovering(false)}
+      class="card"
+      onClick={() => console.log("Hello world")}
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      style={{ transform: props.xys.interpolate(trans) }}
     >
-      <div style={tooltipSpring}>RSVP</div>
+      <div>R S V P</div>
     </CallToButtonStyled>
   );
 };
 
 export const Header = () => (
   <Container>
-    <img src={iidankutsu} width={600} height={600} alt={"Iida ja Janne"} />
+    <img src={iidajajanne} width={600} alt={"Iida ja Janne"} />
 
     <WeddingContainer>
       <HeadingTwo>Tervetuloa juhlimaan häitämme 4.7.2020</HeadingTwo>
@@ -59,18 +68,3 @@ export const Header = () => (
     </WeddingContainer>
   </Container>
 );
-
-// const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
-// const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-
-// function Card() {
-//   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
-//   return (
-//     <animated.div
-//       class="card"
-//       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-//       onMouseLeave={() => set({ xys: [0, 0, 1] })}
-//       style={{ transform: props.xys.interpolate(trans) }}
-//     />
-//   )
-// }

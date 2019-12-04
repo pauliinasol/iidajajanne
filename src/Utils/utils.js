@@ -6,6 +6,6 @@ export const HeadingOne = styled.div`
 `;
 
 export const HeadingTwo = styled.div`
-  font-size: 46px;
+  font-size: 40px;
   padding: 20px;
 `;

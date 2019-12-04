@@ -10,10 +10,12 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  border-bottom: 1px solid #7e8687;
 `;
 
 const NavItem = styled.div`
   padding: 10px;
+  font-size: 18px;
 `;
 
 const NavItems = styled.div`
