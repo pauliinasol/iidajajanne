@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
 import { HeadingTwo } from "../Utils/utils";
@@ -8,6 +8,17 @@ const Container = styled.section`
   background: #f9ebe1;
   display: flex;
   flex-direction: row;
+`;
+
+const ContainerWhite = styled.section`
+  display: flex;
+  flex-direction: row;
+`;
+
+const PoetWrapper = styled.div`
+  padding: 15px;
+  margin: 70px;
+  font-size: 25px;
 `;
 
 const WeddingContainer = styled.div`
@@ -59,12 +70,40 @@ export const CallToButton = () => {
 };
 
 export const Header = () => (
-  <Container>
-    <img src={iidajajanne} width={600} alt={"Iida ja Janne"} />
+  <>
+    <Container>
+      <img src={iidajajanne} width={700} alt={"Iida ja Janne"} />
 
-    <WeddingContainer>
-      <HeadingTwo>Tervetuloa juhlimaan häitämme 4.7.2020</HeadingTwo>
-      <CallToButton />
-    </WeddingContainer>
-  </Container>
+      <WeddingContainer>
+        <HeadingTwo>
+          <p>
+            Tervetuloa todistamaan pientä suurta hetkeämme Snappertunan kirkkoon
+            <b> 4.7.2020 klo 14</b>.
+          </p>
+          <p>
+            Juhlimme nyt aikuisten kesken. Autamme mielellään kysymyksissä.
+            Parhaiten meidät tavoittaa osoitteesta iida.e.miettinen@gmail.com
+          </p>
+        </HeadingTwo>
+        <CallToButton />
+      </WeddingContainer>
+    </Container>
+    <ContainerWhite>
+      <PoetWrapper>
+        Kun mä sinut kohtasin, oli ilta ihanin, basso lauloi ja kimmelsi
+        Kuliksen kuu, sinä sanoit menkäämme maalle mikkelin landelle, mietin nyt
+        juttu tää onnistuu.
+      </PoetWrapper>
+      <PoetWrapper>
+        Yhteen kun muutettiin kukat kukki tuoksui niin Meri vaahtosi kuin aallot
+        kuohuaa Heti rantaan kuljettiin, surffilaudat vahattiin Oli yhdessä niin
+        huumaavaa
+      </PoetWrapper>
+      <PoetWrapper>
+        Oi, jos sulle voisin antaa kaikkein kauneimman Tämän maailmani pallon
+        valtavan Mutta ensin tämän teen, sinut alttarille vien, kun läheiset
+        vierelläsi olla saan
+      </PoetWrapper>
+    </ContainerWhite>
+  </>
 );
