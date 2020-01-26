@@ -10,7 +10,7 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  border-bottom: 1px solid #7e8687;
+  /* border-bottom: 1px solid #7e8687; */
 `;
 
 const NavItem = styled.div`
