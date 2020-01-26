@@ -5,7 +5,7 @@ import { HeadingTwo } from "../Utils/utils";
 import { animated, useSpring } from "react-spring";
 
 const Container = styled.section`
-  background: #f9ebe1;
+  background: #faf3ed;
   display: flex;
   flex-direction: row;
 `;
@@ -68,10 +68,6 @@ export const Header = () => (
           <p>
             Tervetuloa todistamaan pientä suurta hetkeämme Snappertunan kirkkoon
             <b> 4.7.2020 klo 14</b>.
-          </p>
-          <p>
-            Juhlimme nyt aikuisten kesken. Autamme mielellään kysymyksissä.
-            Parhaiten meidät tavoittaa osoitteesta iida.e.miettinen@gmail.com
           </p>
         </HeadingTwo>
         <CallToButton />

@@ -1,12 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.css";
 import { Nav } from "./Components/Nav";
 import { Header } from "./Components/Header";
 import { Map } from "./Components/Map";
 import { Poem } from "./Components/Poem";
-import styled from "styled-components";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Info } from "./Components/Info";
 
 AOS.init({
   once: true,
@@ -28,6 +29,7 @@ function App() {
       <Header />
       <Poem />
       <Map />
+      <Info />
     </Container>
   );
 }
