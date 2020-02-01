@@ -8,6 +8,7 @@ import { Header } from "./Components/Header";
 import { Map } from "./Components/Map";
 import { Poem } from "./Components/Poem";
 import { Info } from "./Components/Info";
+import { Gift } from "./Components/Gift";
 
 AOS.init({
   once: true,
@@ -15,6 +16,11 @@ AOS.init({
   duration: 500,
   offset: 200
 });
+
+const scrollIntoElem = id => () =>
+  document
+    .getElementById(id)
+    .scrollIntoView({ behavior: "smooth", block: "center" });
 
 export const Container = styled.div`
   @media (max-width: 450px) {
@@ -25,10 +31,11 @@ export const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Nav />
+      <Nav rightFn={scrollIntoElem("gift")} />
       <Header />
       <Poem />
       <Map />
+      <Gift id="gift" />
       <Info />
     </Container>
   );

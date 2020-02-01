@@ -61,7 +61,7 @@ export const CallToButton = () => {
 export const Header = () => (
   <>
     <Container>
-      <img src={iidajajanne} width={700} alt={"Iida ja Janne"} />
+      <img src={iidajajanne} width={600} alt={"Iida ja Janne"} />
 
       <WeddingContainer>
         <HeadingTwo>

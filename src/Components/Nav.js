@@ -16,6 +16,9 @@ const Container = styled.div`
 const NavItem = styled.div`
   padding: 10px;
   font-size: 18px;
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 const NavItems = styled.div`
@@ -23,13 +26,14 @@ const NavItems = styled.div`
   flex-direction: row;
 `;
 
-export const Nav = () => {
+export const Nav = ({ rightFn }) => {
   return (
     <Container>
       <HeadingOne>Iida & Janne</HeadingOne>
       <NavItems>
         <NavItem>LISÄTIETOA</NavItem>
         <NavItem>PAIKKA</NavItem>
+        <NavItem onClick={rightFn}>LAHJA</NavItem>
         <NavItem>RSVP</NavItem>
       </NavItems>
     </Container>
