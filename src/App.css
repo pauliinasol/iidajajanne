@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 /* .App-header {
@@ -19,8 +20,4 @@
 
 .App-link {
   color: #927f66;
-}
-
-.App {
-  /* width: 87vh; */
 }
