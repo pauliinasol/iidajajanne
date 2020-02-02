@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
 import { HeadingTwo } from "../Utils/utils";
@@ -8,6 +8,9 @@ const Container = styled.section`
   background: #faf3ed;
   display: flex;
   flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const WeddingContainer = styled.div`
@@ -16,6 +19,7 @@ const WeddingContainer = styled.div`
   justify-content: center;
   padding: 75px;
   flex-direction: column;
+  width: 100%;
 `;
 
 const CallToButtonStyled = styled(animated.div)`
@@ -28,30 +32,26 @@ const CallToButtonStyled = styled(animated.div)`
   pointer-events: all;
   &:hover {
     cursor: pointer;
+    background-color: #85613c;
+    transition: transform 1s;
+    transform: scale(1.2);
+  }
+`;
+
+const Image = styled.div`
+  img {
+    width: 600px;
   }
 `;
 
 export const CallToButton = () => {
-  const [props, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 }
-  }));
-
-  const calc = (x, y) => [
-    -(y - window.innerHeight / 2) / 20,
-    (x - window.innerWidth / 2) / 25,
-    1.1
-  ];
-  const trans = (x, y, s) =>
-    `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
-
+  const [state, setState] = useState(false);
   return (
     <CallToButtonStyled
       class="card"
       onClick={() => console.log("Hello world")}
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-      onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: props.xys.interpolate(trans) }}
+      onMouseOver={() => setState({ hovered: true })}
+      onMouseOut={() => setState({ hovered: false })}
     >
       <div>R S V P</div>
     </CallToButtonStyled>
@@ -61,7 +61,9 @@ export const CallToButton = () => {
 export const Header = () => (
   <>
     <Container>
-      <img src={iidajajanne} width={600} alt={"Iida ja Janne"} />
+      <Image>
+        <img src={iidajajanne} alt={"Iida ja Janne"} />
+      </Image>
 
       <WeddingContainer>
         <HeadingTwo>

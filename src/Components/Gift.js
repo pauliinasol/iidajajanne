@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
-import { HeadingTwo } from "../Utils/utils";
+import { HeadingTwo, HeadingThree } from "../Utils/utils";
 
 const ContainerWhite = styled.section`
   display: flex;
@@ -24,10 +24,11 @@ export const Gift = ({ id }) => {
     <ContainerWhite id={id}>
       <img src={"./kihlauskuva.png"} alt="kihlaus" width="600px" />
       <RightStyled>
-        <HeadingTwo>
+        <HeadingTwo>Lahjat</HeadingTwo>
+        <HeadingThree>
           Mikäli haluat muistaa meitä hääpäivänämme niin toiveenamme olisi, että
           auttaisit WWF:n kautta meille rakasta Itämerta.
-        </HeadingTwo>
+        </HeadingThree>
       </RightStyled>
     </ContainerWhite>
   );
