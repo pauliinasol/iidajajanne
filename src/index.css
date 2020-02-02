@@ -11,6 +11,8 @@ code {
   font-family: "Quicksand", sans-serif;
 }
 
-/* html {
-  width: 87vh;
-} */
+@media only screen and (max-width: 600px) {
+  html {
+    width: 87vh;
+  }
+}

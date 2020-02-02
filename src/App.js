@@ -23,6 +23,7 @@ const scrollIntoElem = id => () =>
     .scrollIntoView({ behavior: "smooth", block: "center" });
 
 export const Container = styled.div`
+  max-width: 100%;
   /* @media (max-width: 768px) {
     width: 87vh;
   } */
