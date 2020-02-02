@@ -6,7 +6,7 @@ import { HeadingTwo, HeadingThree } from "../Utils/utils";
 const ContainerWhite = styled.section`
   display: flex;
   flex-direction: row;
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
