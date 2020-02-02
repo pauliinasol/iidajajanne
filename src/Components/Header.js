@@ -19,7 +19,6 @@ const WeddingContainer = styled.div`
   justify-content: center;
   padding: 75px;
   flex-direction: column;
-  width: 100%;
 `;
 
 const CallToButtonStyled = styled(animated.div)`
@@ -41,6 +40,9 @@ const CallToButtonStyled = styled(animated.div)`
 const Image = styled.div`
   img {
     width: 600px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 

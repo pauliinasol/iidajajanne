@@ -14,13 +14,23 @@ const Container = styled.section`
     color: black;
     font-weight: bold;
   }
+  span {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Info = () => {
   return (
     <Container>
-      Juhlimme nyt aikuisten kesken. Autamme mielellään kysymyksissä. Parhaiten
-      meidät tavoittaa osoitteesta&nbsp;
+      <span>
+        Juhlimme nyt aikuisten kesken. Autamme mielellään kysymyksissä.
+        Parhaiten meidät tavoittaa osoitteesta
+      </span>
+      &nbsp;
       <a href="iida.e.miettinen@gmail.com">iida.e.miettinen@gmail.com</a>
     </Container>
   );
