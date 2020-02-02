@@ -19,16 +19,25 @@ const RightStyled = styled.div`
   flex-direction: column;
 `;
 
+const Heading = styled.div`
+  font-size: 30px;
+  padding: 20px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 0px;
+  }
+`;
+
 export const Gift = ({ id }) => {
   return (
     <ContainerWhite id={id}>
       <img src={"./kihlauskuva.png"} alt="kihlaus" width="600px" />
       <RightStyled>
         <HeadingTwo>Lahjat</HeadingTwo>
-        <HeadingThree>
+        <Heading>
           Mikäli haluat muistaa meitä hääpäivänämme niin toiveenamme olisi, että
           auttaisit WWF:n kautta meille rakasta Itämerta.
-        </HeadingThree>
+        </Heading>
       </RightStyled>
     </ContainerWhite>
   );
