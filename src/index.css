@@ -10,3 +10,7 @@ code {
   /* font-family: "Gupter", serif; */
   font-family: "Quicksand", sans-serif;
 }
+
+html {
+  width: 87vh;
+}
