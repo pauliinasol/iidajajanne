@@ -25,7 +25,7 @@ const Container = styled.section`
 
 const Image = styled.div`
   img {
-    width: 500px;
+    width: 00px;
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -43,6 +43,9 @@ const WeddingContainer = styled.div`
 export const Location = () => {
   return (
     <Container>
+      <Image>
+        <img src={"./snappertuna.jpg"} alt={"Iida ja Janne"} />
+      </Image>
       <WeddingContainer>
         <p>
           Tervetuloa todistamaan pientä suurta hetkeämme Snappertunan kirkkoon
