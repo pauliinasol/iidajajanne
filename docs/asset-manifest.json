@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/iidajajanne/static/css/main.f662d330.chunk.css",
+    "main.js": "/iidajajanne/static/js/main.eede2d08.chunk.js",
+    "main.js.map": "/iidajajanne/static/js/main.eede2d08.chunk.js.map",
+    "runtime-main.js": "/iidajajanne/static/js/runtime-main.9a801940.js",
+    "runtime-main.js.map": "/iidajajanne/static/js/runtime-main.9a801940.js.map",
+    "static/css/2.7abef457.chunk.css": "/iidajajanne/static/css/2.7abef457.chunk.css",
+    "static/js/2.82e31b03.chunk.js": "/iidajajanne/static/js/2.82e31b03.chunk.js",
+    "static/js/2.82e31b03.chunk.js.map": "/iidajajanne/static/js/2.82e31b03.chunk.js.map",
+    "index.html": "/iidajajanne/index.html",
+    "precache-manifest.f766b047e9347edaa315e09ab619dcca.js": "/iidajajanne/precache-manifest.f766b047e9347edaa315e09ab619dcca.js",
+    "service-worker.js": "/iidajajanne/service-worker.js",
+    "static/css/2.7abef457.chunk.css.map": "/iidajajanne/static/css/2.7abef457.chunk.css.map",
+    "static/css/main.f662d330.chunk.css.map": "/iidajajanne/static/css/main.f662d330.chunk.css.map",
+    "static/media/iidajajannepicedited.png": "/iidajajanne/static/media/iidajajannepicedited.c21282da.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a801940.js",
+    "static/css/2.7abef457.chunk.css",
+    "static/js/2.82e31b03.chunk.js",
+    "static/css/main.f662d330.chunk.css",
+    "static/js/main.eede2d08.chunk.js"
+  ]
+}
