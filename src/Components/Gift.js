@@ -31,7 +31,11 @@ const Heading = styled.div`
 export const Gift = ({ id }) => {
   return (
     <ContainerWhite id={id}>
-      <img src={"./kihlauskuva.png"} alt="kihlaus" width="600px" />
+      <img
+        src={process.env.PUBLIC_URL + "/kihlauskuva.png"}
+        alt="kihlaus"
+        width="600px"
+      />
       <RightStyled>
         <HeadingTwo>Lahjat</HeadingTwo>
         <Heading>
