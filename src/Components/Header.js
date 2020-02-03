@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import iidajajanne from "../iidajajannepicedited.png";
+import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
 import { HeadingTwo } from "../Utils/utils";
 import { animated, useSpring } from "react-spring";
@@ -68,10 +68,7 @@ export const Header = () => (
   <>
     <Container>
       <Image>
-        <img
-          src={process.env.PUBLIC_URL + "/iidajajannepicedited.png"}
-          alt={"Iida ja Janne"}
-        />
+        <img src={iidajajanne} alt={"Iida ja Janne"} />
       </Image>
 
       <WeddingContainer>

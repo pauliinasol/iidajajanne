@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import kihlaus from "../kihlauskuva.png";
 import { HeadingTwo, HeadingThree } from "../Utils/utils";
 
 const ContainerWhite = styled.section`
@@ -31,11 +31,7 @@ const Heading = styled.div`
 export const Gift = ({ id }) => {
   return (
     <ContainerWhite id={id}>
-      <img
-        src={process.env.PUBLIC_URL + "/kihlauskuva.png"}
-        alt="kihlaus"
-        width="600px"
-      />
+      <img src={kihlaus} alt="kihlaus" width="600px" />
       <RightStyled>
         <HeadingTwo>Lahjat</HeadingTwo>
         <Heading>
