@@ -9,6 +9,7 @@ import { Map } from "./Components/Map";
 import { Poem } from "./Components/Poem";
 import { Info } from "./Components/Info";
 import { Gift } from "./Components/Gift";
+import { Location } from "./Components/Location";
 
 AOS.init({
   once: true,
@@ -36,6 +37,7 @@ function App() {
       <Header />
       <Poem />
       <Map />
+      <Location />
       <Gift id="gift" />
       <Info />
     </Container>
