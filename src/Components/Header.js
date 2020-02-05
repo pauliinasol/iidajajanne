@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
-import { HeadingTwo, HeadingThree } from "../Utils/utils";
-import { animated, useSpring } from "react-spring";
-
-const breakPoint = "(max-width: 768px)";
+import { HeadingThree, breakPointMaxMedium } from "../Utils/utils";
+import { animated } from "react-spring";
 
 const Container = styled.section`
   background: #faf3ed;
   display: flex;
   flex-direction: row;
-  @media ${breakPoint} {
+  @media ${breakPointMaxMedium} {
     flex-direction: column;
   }
 `;
@@ -19,15 +17,15 @@ const WeddingContainer = styled.div`
   display: flex;
   align-items: left;
   justify-content: center;
-  padding: 1.4em;
+  padding: 2em;
   flex-direction: column;
   width: 50%;
 
-  @media ${breakPoint} {
+  @media ${breakPointMaxMedium} {
     text-align: center;
     align-items: center;
     width: 100%;
-    padding: 2em;
+    padding: 8em 2em;
   }
 `;
 
@@ -58,13 +56,13 @@ const Image = styled.div`
     width: 100%;
   }
 
-  @media ${breakPoint} {
+  @media ${breakPointMaxMedium} {
     width: 100%;
   }
 `;
 
 export const CallToButton = () => {
-  const [state, setState] = useState(false);
+  const [, setState] = useState(false);
   return (
     <CallToButtonStyled
       class="card"

@@ -18,3 +18,6 @@ export const Paragraph = styled.div`
   font-size: 22px;
   padding: 10px;
 `;
+
+export const breakPointMaxMedium = "(max-width: 768px)";
+export const breakPointMaxLarge = "(max-width: 968px)";
