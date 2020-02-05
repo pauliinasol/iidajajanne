@@ -11,8 +11,8 @@ const ContainerWhite = styled.section`
 
 const PoetWrapper = styled.div`
   padding: 15px;
-  margin: 70px;
-  font-size: 25px;
+  margin: 50px;
+  font-size: 22px;
 `;
 
 export const Poem = () => {

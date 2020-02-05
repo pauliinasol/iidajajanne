@@ -22,6 +22,11 @@ const scrollIntoElem = id => () =>
     .getElementById(id)
     .scrollIntoView({ behavior: "smooth", block: "center" });
 
+const scrollIntoMap = id => () =>
+  document
+    .getElementById(id)
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+
 export const Container = styled.div`
   max-width: 100%;
   /* @media (max-width: 768px) {
@@ -32,10 +37,10 @@ export const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Nav rightFn={scrollIntoElem("gift")} />
+      <Nav rightFn={scrollIntoElem("gift")} mapFn={scrollIntoMap("location")} />
       <Header />
       <Poem />
-      <Map />
+      <Map id="location" />
       <Gift id="gift" />
       <Info />
     </Container>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { HeadingTwo, HeadingThree } from "../Utils/utils";
+import { HeadingTwo, Paragraph } from "../Utils/utils";
 
 const ContainerWhite = styled.section`
   display: flex;
@@ -11,33 +11,39 @@ const ContainerWhite = styled.section`
   }
 `;
 
-const RightStyled = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 75px;
-  flex-direction: column;
+const Image = styled.div`
+  img {
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
+    }
+  }
 `;
 
-const Heading = styled.div`
-  font-size: 30px;
-  padding: 20px;
-  @media (max-width: 768px) {
-    font-size: 20px;
-    padding: 0px;
-  }
+const RightStyled = styled.div`
+  display: flex;
+  padding: 75px;
+  flex-direction: column;
 `;
 
 export const Gift = ({ id }) => {
   return (
     <ContainerWhite id={id}>
-      <img src={"./kihlauskuva.png"} alt="kihlaus" width="600px" />
+      <Image>
+        <img src={"./kihlauskuva.png"} alt="kihlaus" width="600px" />
+      </Image>
       <RightStyled>
         <HeadingTwo>Lahjat</HeadingTwo>
-        <Heading>
+        <Paragraph>
           Mikäli haluat muistaa meitä hääpäivänämme niin toiveenamme olisi, että
           auttaisit WWF:n kautta meille rakasta Itämerta.
-        </Heading>
+        </Paragraph>
+        <Paragraph>Tilinumero: FI40 5780 0710 0305 81</Paragraph>
+        <Paragraph>
+          Viestikenttään ”Lahjoittajan nimi / Iida Janne häät”
+        </Paragraph>
       </RightStyled>
     </ContainerWhite>
   );

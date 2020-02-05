@@ -26,13 +26,13 @@ const NavItems = styled.div`
   flex-direction: row;
 `;
 
-export const Nav = ({ rightFn }) => {
+export const Nav = ({ rightFn, mapFn }) => {
   return (
     <Container>
       <HeadingOne>Iida & Janne</HeadingOne>
       <NavItems>
         <NavItem>LISÄTIETOA</NavItem>
-        <NavItem>PAIKKA</NavItem>
+        <NavItem onClick={mapFn}>PAIKKA</NavItem>
         <NavItem onClick={rightFn}>LAHJA</NavItem>
         <NavItem>RSVP</NavItem>
       </NavItems>

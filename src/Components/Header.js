@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import iidajajanne from "../iidajajannepicedited.png";
 import styled from "styled-components";
-import { HeadingTwo } from "../Utils/utils";
+import { HeadingTwo, HeadingThree } from "../Utils/utils";
 import { animated, useSpring } from "react-spring";
 
 const Container = styled.section`
@@ -68,12 +68,12 @@ export const Header = () => (
       </Image>
 
       <WeddingContainer>
-        <HeadingTwo>
+        <HeadingThree>
           <p>
             Tervetuloa todistamaan pientä suurta hetkeämme Snappertunan kirkkoon
             <b> 4.7.2020 klo 14</b>.
           </p>
-        </HeadingTwo>
+        </HeadingThree>
         <CallToButton />
       </WeddingContainer>
     </Container>
