@@ -1,18 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { breakPointMaxLarge } from "../Utils/utils";
 
 const ContainerWhite = styled.section`
   display: flex;
   flex-direction: row;
-  @media (max-width: 500px) {
+  padding: 5em 0;
+  @media ${breakPointMaxLarge} {
     flex-direction: column;
   }
 `;
 
 const PoetWrapper = styled.div`
-  padding: 15px;
-  margin: 50px;
+  padding: 2em;
   font-size: 22px;
+  width: ${100 / 3}%;
+
+  @media ${breakPointMaxLarge} {
+    width: 100%;
+  }
 `;
 
 export const Poem = () => {

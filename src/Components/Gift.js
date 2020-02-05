@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { HeadingTwo, Paragraph } from "../Utils/utils";
+import { HeadingTwo, Paragraph, breakPointMaxMedium } from "../Utils/utils";
 
 const ContainerWhite = styled.section`
   display: flex;
@@ -12,20 +12,24 @@ const ContainerWhite = styled.section`
 `;
 
 const Image = styled.div`
+  width: 50%;
   img {
-    height: 100%;
+    width: 100%;
   }
-  @media (max-width: 768px) {
-    img {
-      width: 100%;
-    }
+  @media ${breakPointMaxMedium} {
+    width: 100%;
   }
 `;
 
 const RightStyled = styled.div`
   display: flex;
-  padding: 75px;
   flex-direction: column;
+  padding: 1em;
+  width: 50%;
+
+  @media ${breakPointMaxMedium} {
+    width: 100%;
+  }
 `;
 
 export const Gift = ({ id }) => {
