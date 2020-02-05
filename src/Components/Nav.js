@@ -31,7 +31,7 @@ export const Nav = ({ rightFn, mapFn }) => {
     <Container>
       <HeadingOne>Iida & Janne</HeadingOne>
       <NavItems>
-        <NavItem>LISÄTIETOA</NavItem>
+        {/* <NavItem>LISÄTIETOA</NavItem> */}
         <NavItem onClick={mapFn}>PAIKKA</NavItem>
         <NavItem onClick={rightFn}>LAHJA</NavItem>
         <NavItem>RSVP</NavItem>

@@ -35,6 +35,10 @@ const CallToButtonStyled = styled(animated.div)`
     transition: transform 1s;
     transform: scale(1.2);
   }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 `;
 
 const Image = styled.div`
@@ -55,7 +59,7 @@ export const CallToButton = () => {
       onMouseOver={() => setState({ hovered: true })}
       onMouseOut={() => setState({ hovered: false })}
     >
-      <div>R S V P</div>
+      <a href={"https://iidamiettinen.typeform.com/to/Xi6HtY"}>R S V P</a>
     </CallToButtonStyled>
   );
 };
