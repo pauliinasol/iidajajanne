@@ -12,7 +12,6 @@ export const HeadingTwo = styled.div`
 
 export const HeadingThree = styled.div`
   font-size: 30px;
-  padding: 10px;
 `;
 
 export const Paragraph = styled.div`
