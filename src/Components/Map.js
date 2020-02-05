@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const MapContainer = styled.div`
   width: 100%;
   background-color: #faf3ed;
+  display: flex;
 `;
 
 export const Map = ({ id }) => {
