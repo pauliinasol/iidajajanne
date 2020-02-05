@@ -12,7 +12,7 @@ const ContainerWhite = styled.section`
 `;
 
 const Image = styled.div`
-  width: 50%;
+  width: 32%;
   img {
     width: 100%;
   }
@@ -26,6 +26,7 @@ const RightStyled = styled.div`
   flex-direction: column;
   padding: 1em;
   width: 50%;
+  justify-content: center;
 
   @media ${breakPointMaxMedium} {
     width: 100%;

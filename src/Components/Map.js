@@ -3,8 +3,11 @@ import styled from "styled-components";
 
 export const MapContainer = styled.div`
   width: 100%;
+  height: 400px;
   background-color: #faf3ed;
   display: flex;
+  display: inline-block;
+  overflow: hidden;
 `;
 
 export const Map = ({ id }) => {
@@ -17,6 +20,12 @@ export const Map = ({ id }) => {
         frameborder="0"
         allowfullscreen="true"
         title="map"
+        style={{
+          position: "relative",
+          top: "-50px",
+          border: "none",
+          bottom: "50px"
+        }}
       ></iframe>
     </MapContainer>
   );

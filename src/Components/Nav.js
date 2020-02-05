@@ -19,6 +19,10 @@ const NavItem = styled.div`
   :hover {
     cursor: pointer;
   }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 `;
 
 const NavItems = styled.div`
@@ -31,10 +35,11 @@ export const Nav = ({ rightFn, mapFn }) => {
     <Container>
       <HeadingOne>Iida & Janne</HeadingOne>
       <NavItems>
-        {/* <NavItem>LISÄTIETOA</NavItem> */}
         <NavItem onClick={mapFn}>PAIKKA</NavItem>
         <NavItem onClick={rightFn}>LAHJA</NavItem>
-        <NavItem>RSVP</NavItem>
+        <NavItem>
+          <a href={"https://iidamiettinen.typeform.com/to/Xi6HtY"}>RSVP</a>
+        </NavItem>
       </NavItems>
     </Container>
   );

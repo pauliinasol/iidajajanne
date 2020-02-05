@@ -5,7 +5,7 @@ import { breakPointMaxLarge } from "../Utils/utils";
 const ContainerWhite = styled.section`
   display: flex;
   flex-direction: row;
-  padding: 5em 0;
+  padding: 3em 0;
   @media ${breakPointMaxLarge} {
     flex-direction: column;
   }
@@ -31,13 +31,13 @@ export const Poem = () => {
       </PoetWrapper>
       <PoetWrapper data-aos="fade-left" data-aos-delay="650">
         Yhteen kun muutettiin kukat kukki tuoksui niin Meri vaahtosi kuin aallot
-        kuohuaa Heti rantaan kuljettiin, surffilaudat vahattiin Oli yhdessä niin
-        huumaavaa
+        kuohuaa. Heti rantaan kuljettiin, surffilaudat vahattiin. Oli yhdessä
+        niin huumaavaa.
       </PoetWrapper>
       <PoetWrapper data-aos="fade-left" data-aos-delay="950">
-        Oi, jos sulle voisin antaa kaikkein kauneimman Tämän maailmani pallon
+        Oi, jos sulle voisin antaa kaikkein kauneimman. Tämän maailmani pallon
         valtavan Mutta ensin tämän teen, sinut alttarille vien, kun läheiset
-        vierelläsi olla saan
+        vierelläsi olla saan.
       </PoetWrapper>
     </ContainerWhite>
   );
