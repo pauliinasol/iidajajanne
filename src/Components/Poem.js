@@ -30,9 +30,9 @@ export const Poem = () => {
         juttu tää onnistuu.
       </PoetWrapper>
       <PoetWrapper data-aos="fade-left" data-aos-delay="650">
-        Yhteen kun muutettiin kukat kukki tuoksui niin Meri vaahtosi kuin aallot
-        kuohuaa. Heti rantaan kuljettiin, surffilaudat vahattiin. Oli yhdessä
-        niin huumaavaa.
+        Yhteen kun muutettiin kukat kukki tuoksui niin. Meri vaahtosi kuin
+        aallot kuohuaa. Heti rantaan kuljettiin, surffilaudat vahattiin. Oli
+        yhdessä niin huumaavaa.
       </PoetWrapper>
       <PoetWrapper data-aos="fade-left" data-aos-delay="950">
         Oi, jos sulle voisin antaa kaikkein kauneimman. Tämän maailmani pallon

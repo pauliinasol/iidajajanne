@@ -8,6 +8,12 @@ export const MapContainer = styled.div`
   display: flex;
   display: inline-block;
   overflow: hidden;
+  iframe {
+    position: relative;
+    top: -50px;
+    border: none;
+    bottom: 50px;
+  }
 `;
 
 export const Map = ({ id }) => {
@@ -20,12 +26,6 @@ export const Map = ({ id }) => {
         frameborder="0"
         allowfullscreen="true"
         title="map"
-        style={{
-          position: "relative",
-          top: "-50px",
-          border: "none",
-          bottom: "50px"
-        }}
       ></iframe>
     </MapContainer>
   );

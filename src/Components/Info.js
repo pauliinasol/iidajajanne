@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.section`
+const Container = styled.div`
   background: #faf3ed;
   display: flex;
   min-height: 200px;
@@ -14,9 +14,9 @@ const Container = styled.section`
     font-weight: bold;
   }
 
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     flex-direction: column;
-  }
+  } */
 `;
 
 export const Info = () => {
